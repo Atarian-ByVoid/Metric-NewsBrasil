@@ -71,3 +71,11 @@ body {
   button[type="submit"]:hover {
     background-color: #2980b9;
   }
+
+  #nao_possui_conta{
+    text-align: center;
+  }
+
+  #link_registrese{
+    text-align: center;
+  }
