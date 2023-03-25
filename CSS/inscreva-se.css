@@ -23,6 +23,7 @@ nav li a:hover {
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -54,8 +55,9 @@ body {
     border: 1px solid #ccc;
   }
   
-  button[type="submit"] {
-    width: 12%;
+  
+  #inscrever {
+    width: 20%;
     height: 40px;
     margin: 10px auto;
     display: block;
@@ -68,14 +70,3 @@ body {
     
   }
   
-  button[type="submit"]:hover {
-    background-color: #2980b9;
-  }
-
-  #nao_possui_conta{
-    text-align: center;
-  }
-
-  #link_registrese{
-    text-align: center;
-  }
