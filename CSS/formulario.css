@@ -68,10 +68,9 @@ body {
     border-radius: 3px;
     border: none;
     cursor: pointer;
-    
-  }
   
- 
+  }
+
   #data{
     width: 100%;
     height: 30px;
@@ -81,4 +80,7 @@ body {
     border-radius: 3px;
     border: 1px solid #ccc;
 
+  }
+  #Cadastrar:hover{
+    background-color: #034d7e
   }
