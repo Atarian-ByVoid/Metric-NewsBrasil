@@ -69,6 +69,9 @@ body {
     cursor: pointer;
     
   }
+  #inscrever:hover{
+    background-color: #034d7e
+  }
 
   .link{
     text-align: center;
