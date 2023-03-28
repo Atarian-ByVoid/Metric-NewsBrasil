@@ -4,11 +4,11 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: space-between;
   }
   
-  nav li {
-    float: left;
-  }
+
   
   nav li a {
     display: block;

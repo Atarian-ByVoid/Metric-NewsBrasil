@@ -9,6 +9,15 @@ nav ul {
 }
 
 
+.notice1{
+    border-radius: 20px;
+    width: 670px;
+    height: 300px;
+    margin-left: 100px;
+
+
+}
+
 nav li a {
   display: block;
   color: white;
@@ -59,7 +68,7 @@ body {
 
 .postagem {
   width: 30%;
-  height: 500px;
+  height: 1900px;
   background-color: #eee;
   padding: 10px;
   margin-bottom: 20px;
@@ -69,6 +78,19 @@ body {
   float: right;
   
 }
+.notice1p{
+  height: 100px;
+  width: 680px;
+  padding-left: 100px;
+}
+
+.footer{
+
+border-style: solid;
+background-color: #111;
+color:#eee;
+}
+
 
 
 
