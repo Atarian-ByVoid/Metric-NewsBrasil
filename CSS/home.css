@@ -187,7 +187,22 @@ footer p {
 }
 
 .newsletter{
+  margin: 0 auto;
   text-align: center;
+  border-radius: 10px;
+  border: #222;
+  border-style: ridge;
+  background-color: rgba(73, 76, 76, 0.421);
+  margin: center;
+  width: 200px;
+  display: block;
+  font-family: fantasy;
+  
+  
+}
+
+.subtitle{
+  margin-top: 10px;
 }
 
 
