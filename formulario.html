@@ -22,36 +22,58 @@
         </header>
         <main>
           <article>
-            <h2>Tela de cadastro</h2>
+            <h2>Formulario de cadastro</h2>
           </article>
         </main>
+        <div class="container"> 
 
-        <p> <form action="/inscreva-se.html">
-            <label for="username">Nome de usuario:</label>
-            <input type="text" id="username" name="username" required>
-          
-            <label for="E-mail">E-mail:</label>
-            <input type="email" id="E-mail" name="E-mail" placeholder="Ex.: email@email.com">
+        <p>Não perca a oportunidade de receber conteúdos exclusivos e informações valiosas. Preencha nosso formulário de contato e tenha acesso a materiais selecionados especialmente para você. Não deixe essa chance passar! </p> 
+         
+        <form action="/inscreva-se.html">
+          <div class="row"> 
+            <div class="col-25">
+            <label for="username">Nome de usuario:</label> </div>
+            <div class="col-75">
+            <input type="text" id="username" name="username" required placeholder="Digite seu nome"></div>
+          </div>
 
-            <label for="data">Data de nascimento:</label>
-            <input type="date" id="data" name="date" required>
+          <div class="row"> 
+            <div class="col-25">
+            <label for="E-mail">E-mail:</label></div>
+            <div class="col-75">
+            <input type="email" id="E-mail" name="E-mail" placeholder="Ex.: email@email.com"></div>
+          </div>
+
+          <div class="row"> 
+            <div class="col-25">
+            <label for="data">Data de nascimento:</label></div>
+            <div class="col-75">
+            <input type="date" id="data" name="date" required></div>
+          </div>
             
-         
+          <div class="row"> 
+            <div class="col-25">
+            <label for="password">Senha:</label></div>
 
-            <label for="password">Senha:</label>
-             <input type="password" id="password" name="password" required>
-             <br>
+            <div class="col-75">
+             <input type="password" id="password" name="password" required placeholder="Digite sua senha"></div>
+            </div>
          
-          
-             <label for="password">Confirmar senha:</label>
-              <input type="password" id="password" name="password" required>
+            <div class="row">
+              <div class="col-25">
+             <label for="password">Confirmar senha:</label></div>
+             <div class="col-75">
+              <input type="password" id="password" name="password" required placeholder="Digite a senha novamente"></div>
+            </div>
          
-            <br>
-              <button id="Cadastrar" type="submit">Cadastrar</button>
+            <div class="row">
+              <br>
+              <input id="botao" type="submit" value="Enviar">
+            </div>
           </form>
-           
+        
     
-        </p>   
+          
     
     
 
@@ -60,6 +82,6 @@
         <footer>
           <p>© 2023 NewsBrasil. Todos os direitos reservados.</p>
         </footer>
-    
+      </div>
 </body>
 </html>
