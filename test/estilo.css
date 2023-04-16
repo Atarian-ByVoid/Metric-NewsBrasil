@@ -1,0 +1,153 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #005689;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para a seção de destaque */
+.destaque {
+    margin-top: 20px;
+    position: relative;
+}
+
+.destaque img {
+    width: 100%;
+    height: auto;
+}
+
+.destaque h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.destaque p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.botao-leia-mais {
+    background-color: #005689;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.botao-leia-mais:hover {
+    background-color: #fff;
+    color: #005689;
+    border: 1px solid #005689;
+}
+
+/* Estilos para a coluna principal */
+.coluna-principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+article {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+article h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+article p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+/* Estilos para a seção da barra lateral */
+aside {
+    width: calc(33.33% - 20px);
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.anuncio img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.anuncio p {
+    font-size: 1.1em;
+    margin-top: 20px;
+    line-height: 1.5em;
+}
+
+.botao-saiba-mais {
+    background-color: #005689;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.botao-saiba-mais:hover {
+    background-color: #fff;
+    color: #005689;
+    border: 1px solid #005689;
+}
+
+.mais-lidas {
+    margin-top: 40px;
+}
+
+.mais-lidas h3 {
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.mais-lidas ol {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.mais-lidas li {
+    font-size: 1.1em;
+    margin

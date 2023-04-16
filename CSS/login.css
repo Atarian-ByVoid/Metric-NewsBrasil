@@ -8,7 +8,25 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/images/pexels-pixabay-159652.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
+
 
 .container {
   max-width: 1200px;
@@ -16,102 +34,51 @@ body {
   padding: 0 20px;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px 0;
+#login-form {
+  max-width: 500px;
+  background-color: #000000;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(186, 186, 186, 0.3);
 }
 
-.logo {
-  font-size: 32px;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
   font-weight: bold;
-  text-decoration: none;
-  margin-right: 20px;
 }
 
-nav {
-  display: flex;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px;
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: #333;
-}
-
-* {
-  box-sizing: border-box;
-}
-p{
- font-weight: bold;
-}
-
-
-.col-25{
-  float: left;
-  width: 25%;
-  margin-top: 6px;
-}
-
-.col-75{
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-  
-}
-.col-75:hover{
-  box-shadow: 0 0 3px 3px black;
-}
-
-.row::after{
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-input[type=text],input[type=email],input[type=password],input[type=date]{
-  border: 1px solid #ccc;
+input[type="text"], input[type="password"], input[type="email"] {
   width: 100%;
-  padding: 15px;
-  resize: none;
-  border-radius: 5px;
-
-  
-}
-label{
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-  
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 20px;
 }
 
-#botao{
-  background-color: rgb(5, 5, 173);
-  float: right;
-  color: #ccc;
-  padding: 12px 20px;
+button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
   cursor: pointer;
-  border-radius: 5px;
-  border: none; 
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
 }
-#botao:hover{
-  background-color: rgb(3, 3, 124);
- 
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
 }
