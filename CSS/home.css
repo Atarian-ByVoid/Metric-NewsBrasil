@@ -9,11 +9,15 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
+.container > .logo  {
+  color : white
+}
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  
 }
 
 header {
@@ -27,6 +31,7 @@ header {
   font-weight: bold;
   text-decoration: none;
   margin-right: 20px;
+  
 }
 
 nav {
@@ -48,7 +53,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
-  transition: all 0.3s ease;
+  
 }
 
 nav ul li a:hover {
@@ -76,7 +81,7 @@ section.top-stories ul li {
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  transition: all 0.3s ease;
+  
 }
 
 section.top-stories ul li:hover {
@@ -149,7 +154,7 @@ section.editor-picks ul li {
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  transition: all 0.3s ease;
+  
 }
 
 section.editor-picks ul li:hover {
