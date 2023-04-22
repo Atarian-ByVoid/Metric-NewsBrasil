@@ -9,7 +9,6 @@
     background-color: #f4f4f4;
     color: #333;
   }
-  
   .container > .logo  {
     color : white
   }
@@ -54,7 +53,7 @@
     text-decoration: none;
     font-size: 18px;
     padding: 10px;
-    transition: all 0.3s ease;
+    
   }
   
   nav ul li a:hover {
@@ -62,49 +61,3 @@
     color: #333;
   }
   
-/* Estilos globais */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-}
-
-/* Estilos do cabeçalho */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-}
-h1 {
-  margin: 0;
-}
-h2 {
-  margin-top: 5px;
-}
-
-/* Estilos da imagem */
-.figure {
-  margin: 20px 0;
-  text-align: center;
-}
-figcaption {
-  font-style: italic;
-}
-
-/* Estilos do texto principal */
-article {
-  margin: 20px;
-}
-blockquote {
-  font-style: italic;
-  margin: 20px;
-  padding: 10px;
-  border-left: 5px solid #333;
-}
-cite {
-  font-style: normal;
-}
-
-  
-  
-  
-    

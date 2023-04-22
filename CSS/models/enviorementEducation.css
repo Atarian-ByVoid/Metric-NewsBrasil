@@ -10,10 +10,15 @@
     color: #333;
   }
   
+  .container > .logo  {
+    color : white
+  }
+  
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    
   }
   
   header {
@@ -27,8 +32,8 @@
     font-weight: bold;
     text-decoration: none;
     margin-right: 20px;
+    
   }
-  
   nav {
     display: flex;
   }
