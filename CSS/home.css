@@ -9,15 +9,16 @@ body {
   background-color: #f4f4f4;
   color: #333;
 }
-.container > .logo  {
-  color : white
+
+.container>.logo {
+  color: white
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  
+
 }
 
 header {
@@ -31,7 +32,7 @@ header {
   font-weight: bold;
   text-decoration: none;
   margin-right: 20px;
-  
+
 }
 
 nav {
@@ -53,7 +54,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 18px;
   padding: 10px;
-  
+
 }
 
 nav ul li a:hover {
@@ -81,7 +82,7 @@ section.top-stories ul li {
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  
+
 }
 
 section.top-stories ul li:hover {
@@ -154,7 +155,7 @@ section.editor-picks ul li {
   margin-right: 20px;
   margin-bottom: 20px;
   background-color: #fff;
-  
+
 }
 
 section.editor-picks ul li:hover {
@@ -188,10 +189,10 @@ footer p {
 
 .fab {
   font-size: inherit;
-  font-style: normal;  
+  font-style: normal;
 }
 
-.newsletter{
+.newsletter {
   font-size: 25px;
   margin: 0 auto;
   text-align: center;
@@ -203,15 +204,15 @@ footer p {
   display: block;
   font-family: fantasy;
   background-image: url('/images/pexels-pixabay-159652.jpg');
-  
-  
+
+
 }
 
-.subtitle{
+.subtitle {
   margin-top: 50px;
 }
 
-.link-sub{
+.link-sub {
   text-decoration: none;
 
 }
@@ -224,7 +225,7 @@ footer p {
   padding: 0 20px;
 }
 
-section.top-stories-1{
+section.top-stories-1 {
   padding: 50px 0;
 }
 
@@ -272,5 +273,3 @@ section.top-stories ul li p {
   font-size: 16px;
   margin-bottom: 10px;
 }
-
-  
