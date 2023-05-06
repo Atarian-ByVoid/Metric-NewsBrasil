@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/menu/weather.css">
 
-    <title>Weather</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/CSS/menu/weather.css">
+  <script src="/JS/weather.js"></script>
+  <title>Weather</title>
 </head>
+
 <body>
-    <header> 
-        <div class="container">
-            <a href="#" class="logo">News Brasil</a>
-            <nav>
-              <ul>
-                <li><a href="/home.html">Home</a></li>
-                <li><a href="/pages/music.html">Sport</a></li>
-                <li><a href="/pages/weather.html">Weather</a></li>
-                <li><a href="/pages/music.html">Music</a></li>
-                <li><a href="/pages/photos.html">Photos</a></li>
-                <li><a href="/pages/more.html">More</a></li>
-                <li><a href="/pages/login.html">Login</a></li>
-              </ul>
-            </nav>
-          </div>
-        </header>
-    
+
+
+  <div class="clima-tempo">
+    <div class="the-most-container">
+
+      <input class="input-city" placeholder="Enter the name of a city">
+      <button class="button-find" onclick="clickOn()">
+        <img class="image-find" alt="find" src="/images/weather/lupa.png">
+      </button>
+
+      <div class="the-middle-container">
+        <h2 class="city"> Weather in...</h2>
+        <p class="temp"> 21°</p>
+
+        <div class="the the-least-container">
+          <img class="image-prevision" alt="icon-info-weather" src="https://openweathermap.org/img/wn/04n.png">
+          <p class="text-prevision"> Cloudy</p>
+        </div>
+
+        <p class="humidity"> Humidity: 74%</p>
+      </div>
+    </div>
+
+
+  </div>
+
 </body>
+
 </html>

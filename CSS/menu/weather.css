@@ -1,63 +1,117 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans',sans-serif;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("/images/weather/teste.jpg") ; 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  backdrop-filter: blur( 5.5px );
+
   
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  .container > .logo  {
-    color : white
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    
-  }
-  
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
-  
-  .logo {
-    font-size: 32px;
-    font-weight: bold;
-    text-decoration: none;
-    margin-right: 20px;
-    
-  }
-  
-  nav {
-    display: flex;
-  }
-  
-  nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 10px;
-    
-  }
-  
-  nav ul li a:hover {
-    background-color: #fff;
-    color: #333;
-  }
-  
+}
+
+.image-background{
+  height: 100vh;
+  width: 100vw;
+
+}
+
+.the-most-container{
+  background: #000;
+  opacity: 0.8;
+  max-width: 420px;
+  width: 95%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 20px;
+}
+
+.input-city{
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  font-size: 20px;
+  background-color:#7c7c7c2b ;
+  color: aliceblue;
+  width: calc(100%-100px);
+}
+
+
+.button-find{
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  background-color:#7c7c7c2b ;
+  cursor: pointer;
+  float: right;
+
+}
+
+.image-find{
+  width: 20px;
+
+}
+
+.the-middle-container{
+  margin-top: 10px;
+}
+
+.city{
+  color: aliceblue;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.temp{
+  font-size: 20px;
+  color: aliceblue;
+  margin-top: 10px;
+
+}
+
+.the-least-container{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.text-prevision{   
+   color: floralwhite;
+  align-items: center;
+  margin-left: 2%;
+  text-transform: capitalize;
+}
+
+.humidity{
+  color: aliceblue;
+  font-size: 15px;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+
+
+
