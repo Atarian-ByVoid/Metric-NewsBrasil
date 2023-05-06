@@ -67,12 +67,15 @@ body{
   background-color:#7c7c7c2b ;
   cursor: pointer;
   float: right;
+  background-image: linear-gradient(to right, #fafafa, #0000007a);
+  background-size: 200% 200%;
+  animation: gradient 4s ease-in-out infinite;
+  
 
 }
 
 .image-find{
   width: 20px;
-
 }
 
 .the-middle-container{
@@ -125,8 +128,17 @@ body{
   cursor: pointer;
   float: right;
   color: aliceblue;
+  font: bold;
 }
 
-
-
-
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
