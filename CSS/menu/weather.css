@@ -29,7 +29,7 @@ body{
 .the-most-container{
   background: #000;
   opacity: 0.8;
-  max-width: 420px;
+  max-width: 590px;
   width: 95%;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -110,6 +110,21 @@ body{
   font-size: 15px;
   font-weight: 200;
   margin-top: 10px;
+}
+
+.back{
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 45px;
+  -webkit-border-radius: 45px;
+  -moz-border-radius: 45px;
+  -ms-border-radius: 45px;
+  -o-border-radius: 45px;
+  background-color:#7c7c7c2b ;
+  cursor: pointer;
+  float: right;
+  color: aliceblue;
 }
 
 

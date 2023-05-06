@@ -29,4 +29,7 @@ function clickOn() {
     findCity(city);
 }
 
+function goBack() {
+    window.history.back();
+}
 
