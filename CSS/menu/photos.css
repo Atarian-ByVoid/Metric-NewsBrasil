@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,400;1,100&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,400;1,500&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -151,3 +153,124 @@
     font-size: 30px;
     color: #020410;
   }
+
+
+
+
+  .card {
+    position: relative;
+    align-items: center;
+    width: 75vw;
+    max-width: 650px;
+    padding: 50px 30px 50px 20px;
+    background: #ffff;
+    margin-top: 10%;
+    border-radius: 24px;
+    margin-left: 25%;
+  }
+     .image {
+    width: 240px;
+    height: 240px;
+    display: none;
+
+  }
+  .image:first-of-type {
+    display: block;
+  }
+  
+  .card img{
+    max-width: 280px;
+    width: 28vw;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 90px;
+    border-radius: inherit;
+    -webkit-border-radius: inherit;
+    -moz-border-radius: inherit;
+    -ms-border-radius: inherit;
+    -o-border-radius: inherit;
+
+}
+.card h2{
+  font-size: 22px;
+  margin-right:30px ;
+}
+
+
+.card h3{
+  font-size: 16px;
+  font-weight:400 ;
+  color: rgb( 0 0 0/90%);
+}
+
+.card p{
+  font-size:14px ;
+  font-weight: 400;
+  color: rgb( 0 0 0/70%);
+  bottom: 24px;
+
+}
+html{
+    height: 100%;
+}
+
+.card button{
+  border: 0;
+  font-family: inherit;
+  padding: 10px 9px;
+  font-size:10px ;
+  margin-left: 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+@media (width<=740px){
+
+  .card{
+    margin: 0 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+  }
+  .card h2{
+    margin-right: 0;
+    font-size: 26px;
+  }
+  .card img{
+    margin: -100px 0 30px 0 ;
+    width: 100%;
+    max-width: 1000px;
+  }
+} 
+
+.gallery {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+}
+
+.photo {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+ 
+}
+
+.photo img {
+  max-width: 100%;
+}
+
+.photo h3 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+ 
