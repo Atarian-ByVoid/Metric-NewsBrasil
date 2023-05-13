@@ -151,3 +151,25 @@ body {
   font-size: 30px;
   color: #020410;
 }
+
+.music-player {
+  background-color: #f7f7f7;
+  padding: 20px;
+  margin-top: 30%;
+}
+audio {
+  display: block;
+  margin-bottom: 10px;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
