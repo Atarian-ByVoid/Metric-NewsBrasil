@@ -4,6 +4,7 @@
     padding: 0;
   }
   
+
   body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -14,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 25px 12.5%;
+    padding: 25px 10.5%;
     background: transparent;
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,15 @@
   
   }
   
+  .header label{
+    margin-right: 10px;
+    color: aliceblue;
+    font-size: 32px ;
+    display: inline;
+    justify-content: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
   .navbar a{
     position: relative;
     font-size: 16px;
@@ -133,8 +143,7 @@
     color: #e4e4e4 ;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    
+    flex-direction: column;  
   
   }
   
