@@ -1,7 +1,7 @@
 
-var bgImageArray = ["lake.jpg", "lake2.jpg", "mountain1.jpg", "mountain_dark.jpg", "mountain2.jpg", "mountain3.jpg"],
+const bgImageArray = ["lake.jpg", "lake2.jpg", "mountain1.jpg", "mountain_dark.jpg", "mountain2.jpg", "mountain3.jpg"],
     base = "/images/changeBackground/",
-    secs = 15;
+    secs = 2;
 bgImageArray.forEach(function (img) {
     new Image().src = base + img;
 });
