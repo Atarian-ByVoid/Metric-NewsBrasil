@@ -9,8 +9,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: #1d1d1d;
+  color: #eee;
 }
 
 .header {
@@ -194,6 +194,11 @@ body {
 
 }
 
+
+.title-card{
+  color: #020410;
+}
+
 .card h2 {
   font-size: 22px;
   margin-right: 30px;
@@ -350,7 +355,7 @@ html {
 .about-sky {
   margin-top: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #333333bb;
+  color: #ffffffbb;
   text-align: center;
 
 }
@@ -369,9 +374,7 @@ html {
   margin-top: 2%;
   column-count: 2;
   column-gap: 40px;
-  column-rule: 2px solid rgb(150, 159, 161);
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.644);
+  column-rule: 2px solid rgb(247, 247, 247);
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -417,7 +420,7 @@ html {
 .gallery-jungle h2 {
   margin-top: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #333333bb;
+  color: #ffffffbb;
   text-align: center;
 }
 
