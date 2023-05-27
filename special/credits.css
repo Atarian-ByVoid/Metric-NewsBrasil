@@ -14,7 +14,7 @@
 html,
 body{
 	min-height: 100%;
-    background-image: url("/images/photos/jungle/pexels-pixabay-247600.jpg") ; 
+    /* background-image: url("/images/photos/jungle/pexels-pixabay-247600.jpg") ;  */
     background-size: 100% 100%;
     background-repeat: no-repeat;
     backdrop-filter: blur( 5.5px );}
@@ -61,11 +61,11 @@ h1{
 	height: 116px;
 	left: 10px;
 	top: 10px;
-	background: black;
+	background: rgb(186, 164, 164);
 	overflow: hidden;
-	border: solid 5px black;
+	border: solid 5px rgb(215, 207, 207);
 }
-#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(288px);}
+#carousel figure:nth-child(1){ transform: rotateY(0deg) translateZ(288px); -webkit-transform: rotateY(0deg) translateZ(288px); -moz-transform: rotateY(0deg) translateZ(288px); -ms-transform: rotateY(0deg) translateZ(288px); -o-transform: rotateY(0deg) translateZ(288px); }
 #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
 #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
 #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
@@ -76,12 +76,16 @@ h1{
 #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px);}
 
 img{
-	-webkit-filter: grayscale(1);
+	width: 400px;
+	height: 400px;
 	cursor: pointer;
 	transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
 }
 img:hover{
-  -webkit-filter: grayscale(0);
   transform: scale(1.2,1.2);
   -webkit-transform: scale(1.2,1.2);
   -moz-transform: scale(1.2,1.2);

@@ -9,6 +9,14 @@ body{
   background: #020410;
 }
 
+.metric-logo{
+  width: 400px !important;
+  height: 300px;
+  margin-left: 50%;
+  
+}
+
+
 .header{
   position: fixed;
   top: 0;
@@ -136,7 +144,7 @@ body{
   transform: translate(-50%,-50%);
   width: 75%;
   height: 550px;
-  background: url('/images/login/pexels-tiana-614484.jpg') no-repeat;
+  background: url('/images/photos/images-card/pexels-henrik-tuvesson-15925339.jpg') no-repeat;
   background-size: cover;
   background-position: center;
   -webkit-transform: translate(-50%,-50%);
@@ -163,27 +171,36 @@ body{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  font-style: bold;
+  
   
 
 }
 
 .content .logo{
-  font-size: 30px;
-  color: #020410;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+  color: rgba(0, 0, 0, 0.721);
+
+  
 }
 
 .text-sci h2{
   font-size: 40px;
   line-height: 1;
+  
 }
 
 .text-sci h2 span{
   font-size: 25px ;
+  
 }
 
 .text-sci p {
   font-size: 16px;
   margin: 20px 0;
+
+  
 
 }
 
@@ -196,6 +213,7 @@ body{
   -moz-transition: .5s ease;
   -ms-transition: .5s ease;
   -o-transition: .5s ease;
+  
   
 }
 
@@ -225,7 +243,7 @@ body{
   backdrop-filter: blur(10px);
   border-top-right-radius:10px ;
   border-bottom-right-radius:10px ;
-  color: #020410;
+  color: aliceblue;
   
 }
 
