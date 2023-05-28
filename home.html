@@ -4,42 +4,31 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metric Home Page </title>
+  <title>News Brasil</title>
   <link rel="stylesheet" href="CSS/home.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <a href="home.html" class="logo">News Brasil</a>
-      <nav>
-        <ul>
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/pages/music.html">Sport</a></li>
-          <li><a href="/pages/weather.html">Weather</a></li>
-          <li><a href="/pages/music.html">Music</a></li>
-          <li><a href="/pages/photos.html">Photos</a></li>
-          <li><a href="/pages/realTimeStopwatch.html">Real time stopwatch</a></li>
-          <li><a href="/pages/more.html">More</a></li>
-          <li><a href="/pages/login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <section class="top-stories-1">
-      <div class="container-1">
-        <h2>Agribusiness</h2>
-        <ul>
-          <li>
-            <a href="#">
-              <img src="/images/noticies/pexels-pixabay-325944.jpg" alt="" />
-              <h3>Economy</h3>
-              <p>Brief summary of the article goes here.</p>
-            </a>
-          </li>
+  <header class="header"><label>News Brasil</label>
+    <nav class="navbar">
+      <a href="/home.html">Home</a>
+      <a href="/pages/sport.html">Sport</a>
+      <a href="/pages/weather.html">Weather</a>
+      <a href="/pages/music.html">Music</a>
+      <a href="/pages/photos.html">Photos</a>
+      <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+      <a href="/pages/more.html">More</a>
+ <a href="/pages/login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
+    </nav>
+    <form action="#" class="search-bar">
 
-    </section>
+      <input type="text" placeholder="Search...">
+      <button type="submit"><i class='bx bx-search'></i></button>
+    </form>
+  </header>
+
+  <main>
     <section class="top-stories">
       <div class="container">
         <h2>Environment</h2>
@@ -69,22 +58,34 @@
       </div>
     </section>
 
-    <!-- <section class="video">
-        <div class="container">
-          <h2>Video</h2>
-          <div class="video-player">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/P9fIdrzJSYM"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        </div>
-      </section> -->
+    <section class="top-stories">
+      <div class="container">
+        <h2>Culture</h2>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="/images/noticies/jardim.jpg" alt="" />
+              <h3>Six extraordinary gardens </h3>
+              <p>Brief summary of the article goes here.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/images/noticies/guardaroupa.jpg" alt="" />
+              <h3>The rise of the minimalist wardrobe</h3>
+              <p>Brief summary of the article goes here.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="/images/noticies/street.jpg" alt="" />
+              <h3>Ancients islamic roots of modernity</h3>
+              <p>Brief summary of the article goes here.</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <section class="top-stories">
       <div class="container">
         <h2>Social cause</h2>
@@ -142,12 +143,14 @@
         </ul>
       </div>
     </section>
+
     <footer>
       <div class="footer">
-        <p>&copy; 2023 News Brasil. Todos os direitos reservados.</p>
-
+        <p>&copy; 2023 News Brasil & Metric. All rights reserved.</p>
       </div>
     </footer>
+
+    
 </body>
 
 </html>

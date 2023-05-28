@@ -6,29 +6,223 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/CSS/menu/photos.css">
-
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   <title>Photos</title>
 </head>
 
 <body>
+  <header class="header"><label>News Brasil</label>
+    <nav class="navbar">
+      <a href="/home.html">Home</a>
+      <a href="/pages/sport.html">Sport</a>
+      <a href="/pages/weather.html">Weather</a>
+      <a href="/pages/music.html">Music</a>
+      <a href="/pages/photos.html">Photos</a>
+      <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+      <a href="/pages/more.html">More</a>
+      <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i> <a href="/pages/login.html">Login</a>
+    </nav>
+    <form action="#" class="search-bar">
 
-  <header>
-    <div class="container">
-      <a href="home.html" class="logo">News Brasil</a>
-      <nav>
-        <ul>
-          <li><a href="/home.html">Home</a></li>
-          <li><a href="/pages/music.html">Sport</a></li>
-          <li><a href="/pages/weather.html">Weather</a></li>
-          <li><a href="/pages/music.html">Music</a></li>
-          <li><a href="/pages/photos.html">Photos</a></li>
-          <li><a href="/pages/realTimeStopwatch.html">Real time stopwatch</a></li>
-          <li><a href="/pages/more.html">More</a></li>
-          <li><a href="/pages/login.html">Login</a></li>
-        </ul>
-      </nav>
-    </div>
+      <input type="text" placeholder="Search...">
+      <button type="submit"><i class='bx bx-search'></i></button>
+    </form>
   </header>
+
+  <div class="card">
+    <img class="image slide" src="/images/photos/images-card/pexels-alejandro-novoa-16756523.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-alexander-rondón-15206807.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-anastasia-dvoryanova-16956745.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-angelo-herreras-16881617.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-annija-u-15985573.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-camille-camila-16608204.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-efrem-efre-16931301.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-henrik-tuvesson-15925339.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-igor-meghega-15654378.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-joaquin-carfagna-16944712.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-lidia-miralles-16968296.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-lina-kivaka-14281752.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-luka-peric-16863602.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-luke-miller-14794505.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-reanimated-man-x-14337862.jpg" />
+    <img class="image slide" src="/images/photos/images-card/pexels-zsófia-fehér-16853260.jpg" />
+
+    <div>
+      <h2 class="title-card">Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+      <h3>Lorem: ipsum dolor sit amet.</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere quam commodi alias perspiciatis
+        tenetur!
+      </p>
+    </div>
+  </div>
+
+
+  <section class="gallery">
+    <div class="photo">
+      <img src="/images/photos/bridge.jpg" alt="Foto 1">
+      <h3>Reflexos da Alma</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/desert.jpg" alt="Foto 2">
+      <h3>Espiral da Criatividade</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/plant.jpg" alt="Foto 3">
+      <h3>Emoções Despertas</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/beach.jpg" alt="Foto 4">
+      <h3>Paisagens da Mente</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/city.jpg" alt="Foto 5">
+      <h3>Espelho da Eternidade</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/road.jpg" alt="Foto 6">
+      <h3>Essência do Instante</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/mist.jpg" alt="Foto 7">
+      <h3>Horizontes Infinitos</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/water.jpg" alt="Foto 8">
+      <h3>Encantamento Visual</h3>
+    </div>
+    <div class="photo">
+      <img src="/images/photos/jungle.jpg" alt="Foto 9">
+      <h3>Traços da Emoção</h3>
+    </div>
+  </section>
+
+
+  <div class="newspaper">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+    dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+    suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+    vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et
+    iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+    possim assum.
+  </div>
+
+  <main>
+    <section class="gallery">
+      <img src="/images/photos/jungle/pexels-luis-del-río-15286.jpg" alt="Foto 1" class="image-1">
+      <img src="/images/photos/jungle/pexels-pixabay-247600.jpg" alt="Foto 2" class="image-2">
+      <img src="/images/photos/sky/pexels-tim-mossholder-1605148.jpg" alt="Foto 3" class="image-3">
+      <!-- Adicione mais imagens aqui -->
+    </section>
+
+    <section class="gallery-sky">
+      <img src="/images/photos/sky/pexels-debasish-vishal-4124167.jpg" alt="Foto 4" class="image-4">
+      <div class="about-sky">
+        <h2>Sky</h2>
+        <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+          laoreet,Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur tempora, aut impedit
+          animi temporibus nostrum quod! Pariatur aspernatur aliquid dignissimos.</p>
+      </div>
+      <img src="/images/photos/sky/pexels-donald-tong-133953.jpg" alt="Foto 5" class="image-5">
+    </section>
+
+    <div class="about-news-brazil-photos">
+      <div class="about-photos">
+
+        <h2>News Brazil Photos</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+          laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+          hendrerit
+          in
+          vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+          accumsan et
+          iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+          facilisi.
+          Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+          placerat
+          facer
+          possim assum,Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, distinctio
+          libero
+          commodi iure nulla ea nihil consectetur facere itaque pariatur repellat provident modi, tenetur
+          laboriosam
+          sit repellendus ex, magnam quidem odit eligendi ad hic nobis? Inventore dolorem quo vel temporibus
+          omnis,
+          officiis aperiam eius veniam dolor porro aliquid quasi quis. Doloribus natus ea perspiciatis
+          reiciendis
+          praesentium, est beatae, exercitationem, repudiandae quo autem assumenda mollitia perferendis nulla
+          laudantium unde inventore eius. Totam soluta quidem in omnis tempore nihil, ad odit fugit minus
+          cupiditate
+          id eum, dignissimos fuga doloremque tenetur nobis dolore voluptate quae atque ut ducimus quis
+          necessitatibus! Omnis, quod! Aut quos velit porro est id sint temporibus numquam esse, dolore,
+          repudiandae
+          iusto nobis cumque reprehenderit ullam neque doloribus architecto tempora vitae vel quas.
+        </p>
+      </div>
+    </div>
+    <section class="gallery-jungle">
+      <h2>Jungle</h2>
+      <img src="/images/photos/jungle/pexels-alexander-igrevsky-1310755.jpg" alt="Foto 6" class="image-6">
+      <img src="/images/photos/jungle/pexels-andré-cook-131723.jpg" alt="Foto 7" class="image-7">
+      <img src="/images/photos/jungle/pexels-eberhard-grossgasteiger-1367192.jpg" alt="Foto 8" class="image-8">
+    </section>
+
+    <div class="about-world">
+      <div class="about-photos">
+
+        <h2>Around the world</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+          laoreet
+          dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+          ullamcorper
+          suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+          hendrerit.
+        </p>
+      </div>
+    </div>
+    <section class="carousel">
+      <div class="carousel_slider">
+        <div class="content_inner_slider">
+          <img src="/images/photos/jungle/pexels-stefan-stefancik-91228.jpg" alt="" class="img">
+          <img src="/images/photos/jungle/pexels-luis-del-río-15286.jpg" alt="" class="img">
+          <img src="/images/photos/sky/pexels-tim-mossholder-1605148.jpg" alt="" class="img">
+          <img src="/images/photos/sky/pexels-frank-cone-2258536.jpg" alt="" class="img">
+          <img src="/images/photos/jungle/pexels-ünsal-demirbaş-23547.jpg" alt="" class="img">
+
+  
+        </div>
+        <button class="prev_button">
+          <ion-icon name="chevron-back-outline"></ion-icon>
+        </button>
+        <button class="next_button">
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+      <ul class="dots">
+        <li class="dot" value="0"></li>
+        <li class="dot" value="1"></li>
+        <li class="dot" value="2"></li>
+        <li class="dot" value="3"></li>
+        <li class="dot" value="4"></li>
+
+      </ul>
+      <div class="form">
+        <input type="checkbox" class="auto_slide" id="slide">
+        <label for="slide">Auto Slide</label>
+      </div>
+    </section>
+    <script src="/JS/carrouselHome.js"></script>
+
+
+    <script src="/JS/carrouselPhotos.js"></script>
+
 
 
 </body>
