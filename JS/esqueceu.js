@@ -1,4 +1,6 @@
 function redirecionar() {
+    document.getElementById("input-senha").value="";
+    document.getElementById("input-confirma").value = "";
     window.location.href = "/pages/login.html";
   }
   
@@ -6,11 +8,11 @@ function redirecionar() {
     let senha = document.getElementById("input-senha").value;
     let confirmarSenha = document.getElementById("input-confirma").value;
   
-    if (senha === confirmarSenha) {
-      redirecionar();
+    if (senha === confirmarSenha && senha !== "") {
+        senha_salva = senha;
+        redirecionar();
     } else {
       alert("As senhas não correspondem. Por favor, tente novamente.");
     }
   }
-  
   document.querySelector(".btn").addEventListener("click", validarSenha);
