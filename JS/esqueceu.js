@@ -1,3 +1,5 @@
+let senha_salva = ""
+
 function redirecionar() {
     document.getElementById("input-senha").value="";
     document.getElementById("input-confirma").value = "";
@@ -9,7 +11,7 @@ function redirecionar() {
     let confirmarSenha = document.getElementById("input-confirma").value;
   
     if (senha === confirmarSenha && senha !== "") {
-        senha_salva = senha;
+        senha_salva += senha;
         redirecionar();
     } else {
       alert("As senhas não correspondem. Por favor, tente novamente.");
