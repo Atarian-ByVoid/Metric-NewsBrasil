@@ -68,7 +68,7 @@ h1{
 #carousel figure:nth-child(1){ transform: rotateY(0deg) translateZ(288px); -webkit-transform: rotateY(0deg) translateZ(288px); -moz-transform: rotateY(0deg) translateZ(288px); -ms-transform: rotateY(0deg) translateZ(288px); -o-transform: rotateY(0deg) translateZ(288px); }
 #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px);}
 #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px);}
-#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); -webkit-transform: rotateY(120deg) translateZ(288px); -moz-transform: rotateY(120deg) translateZ(288px); -ms-transform: rotateY(120deg) translateZ(288px); -o-transform: rotateY(120deg) translateZ(288px); }
 #carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(288px);}
 #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px);}
 #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px);}
