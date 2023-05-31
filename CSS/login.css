@@ -233,3 +233,7 @@ body{
   text-decoration: underline;
 
 }
+
+.btn:hover{
+  font-weight: bold;
+}
