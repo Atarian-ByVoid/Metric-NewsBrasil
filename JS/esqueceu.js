@@ -12,6 +12,7 @@ function redirecionar() {
   
     if (senha === confirmarSenha && senha !== "") {
         senha_salva += senha;
+        alert("Senha alterada com sucesso");
         redirecionar();
     } else {
       alert("As senhas não correspondem. Por favor, tente novamente.");

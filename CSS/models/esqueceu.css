@@ -166,3 +166,8 @@
     color: white;
     font-weight: 500;
   }  
+
+  .btn:hover{
+    
+    font-weight: bold;
+  }
