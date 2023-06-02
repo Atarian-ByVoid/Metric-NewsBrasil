@@ -476,6 +476,22 @@ li {
   
 }
 
+.about-world h2{
+  margin-bottom: 1%;
+  color: #ecf0f1;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about-world{
+
+  margin-top: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #ffffffbb;
+  margin-right: 30%;
+}
+
+
+
 .carousel {
    /*width: 50vw;
    height: 60vh;
@@ -483,20 +499,26 @@ li {
    flex-direction: column;
    align-items: center;
    position: relative;
-   */display: flex;
+   */
+   display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: center;
    height: 100vh;
    width: 50vw;
-   
+
 }
+
 
 .carousel_slider {
   width: 100%;
   height: 87%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  align-items: center;
+  align-content: center;
 }
 
 .content_inner_slider {
@@ -572,15 +594,9 @@ li {
 }
 
 
-.about-world{
-  margin-top: 10px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #ffffffbb;
-  margin-right: 30%;
-}
 
-.about-world h2{
-  margin-bottom: 1%;
-  color: #ecf0f1;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+.teste{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
