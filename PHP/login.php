@@ -10,28 +10,31 @@ if ($conn->connect_error) {
     die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-$username = $_POST['username'];
-$password = $_POST['password'];
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $email = isset($_POST['email']) ? $_POST['email'] : '';
+    $password = isset($_POST['password']) ? $_POST['password'] : '';
 
-if (empty($username) || empty($password)) {
-    echo "Por favor, preencha todos os campos.";
-} else {
-    $sql = "SELECT id, password FROM users WHERE username = ?";
-    $stmt = $conn->prepare($sql);
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows == 1) {
-        $row = $result->fetch_assoc();
-        $hashedPassword = $row['password'];
-        if (password_verify($password, $hashedPassword)) {
-            echo "Login bem-sucedido!";
-        } else {
-            echo "Senha incorreta.";
-        }
+    if (empty($email) || empty($password)) {
+        echo "Por favor, preencha todos os campos.";
     } else {
-        echo "Nome de usuário não encontrado.";
+        $sql = "SELECT * FROM users WHERE email = ?";
+        $stmt = $conn->prepare($sql);
+        $stmt->bind_param("s", $email);
+        $stmt->execute();
+        $result = $stmt->get_result();
+
+        if ($result->num_rows == 1) {
+            $user = $result->fetch_assoc();
+            if (password_verify($password, $user['password'])) {
+                // Senha correta, redirecione para a página desejada
+                header("Location: dashboard.php");
+                exit();
+            } else {
+                echo "Senha incorreta.";
+            }
+        } else {
+            echo "Email não encontrado.";
+        }
     }
 }
 

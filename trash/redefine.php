@@ -12,9 +12,12 @@ if ($conn->connect_error) {
 
 $username = $_POST['username'];
 $newPassword = $_POST['new_password'];
+$confirmPassword = $_POST['confirm_password'];
 
-if (empty($username) || empty($newPassword)) {
+if (empty($username) || empty($newPassword) || empty($confirmPassword)) {
     echo "Por favor, preencha todos os campos.";
+} elseif ($newPassword !== $confirmPassword) {
+    echo "As senhas digitadas não coincidem.";
 } else {
     $sql = "SELECT id FROM users WHERE username = ?";
     $stmt = $conn->prepare($sql);
@@ -28,7 +31,7 @@ if (empty($username) || empty($newPassword)) {
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("ss", $hashedPassword, $username);
         $stmt->execute();
-        
+
         echo "Senha redefinida com sucesso!";
     } else {
         echo "Nome de usuário não encontrado.";
