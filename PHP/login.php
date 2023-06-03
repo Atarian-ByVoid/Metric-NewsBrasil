@@ -5,21 +5,17 @@ $username = "root";
 $password = "admin";
 $dbname = "validator";
 
-// Conexão com o banco de dados
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
 
-// Receber dados do formulário de login
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-// Validar os dados (exemplo: verificar se campos estão preenchidos)
 if (empty($username) || empty($password)) {
     echo "Por favor, preencha todos os campos.";
 } else {
-    // Verificar se o nome de usuário existe no banco de dados
     $sql = "SELECT id, password FROM users WHERE username = ?";
     $stmt = $conn->prepare($sql);
     $stmt->bind_param("s", $username);
