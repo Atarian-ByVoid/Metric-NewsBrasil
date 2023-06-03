@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $user = $result->fetch_assoc();
             if (password_verify($password, $user['password'])) {
                 // Senha correta, redirecione para a página desejada
-                header("Location: dashboard.php");
+                header("Location: home.html");
                 exit();
             } else {
                 echo "Senha incorreta.";
