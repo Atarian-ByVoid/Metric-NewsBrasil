@@ -155,19 +155,12 @@ body{
 }
 .input-box label{
   position: absolute;
-  top: 50%;
   left: 5px;
-  transform: translateY(-50%);
   font-size: 1em;
   color: #000;
   font-weight: 500;
   pointer-events: none;
-  transition: .5s;
-}
-.input-box input:focus~label,
-.input-box input:valid~label{
-  top: -5px;
-
+ 
 }
 
 .input-box input{
@@ -179,7 +172,7 @@ body{
   font-size: 1em;
   color: #000;
   font-weight: 600;
-  padding: 0 35px 0 5px;
+  padding: 15px 35px 0 5px;
 }
 .input-box .icon{
   position: absolute;
@@ -239,4 +232,8 @@ body{
 .login-register p a:hover{
   text-decoration: underline;
 
+}
+
+.btn:hover{
+  font-weight: bold;
 }
