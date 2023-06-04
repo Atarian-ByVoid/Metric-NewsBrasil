@@ -7,7 +7,7 @@ $dbname = "validator";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+    die("Database connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -16,9 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $confirmPassword = isset($_POST['confirm_password']) ? $_POST['confirm_password'] : '';
 
     if (empty($email) || empty($newPassword) || empty($confirmPassword)) {
-        echo "Por favor, preencha todos os campos.";
+        echo "Please fill in all fields.";
     } elseif ($newPassword !== $confirmPassword) {
-        echo "As senhas digitadas não coincidem.";
+        echo "The passwords entered do not match.";
     } else {
         $sql = "SELECT id FROM users WHERE email = ?";
         $stmt = $conn->prepare($sql);
@@ -33,11 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $stmt->bind_param("ss", $hashedPassword, $email);
             $stmt->execute();
 
-            echo "Senha redefinida com sucesso!";
+            echo "Password successfully reset!";
             header("Location: login.html");
 
         } else {
-            echo "Email não encontrado.";
+            echo "Email not found.";
         }
     }
 }

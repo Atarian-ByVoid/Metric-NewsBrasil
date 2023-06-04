@@ -7,7 +7,7 @@ $dbname = "validator";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+    die("Database connection failed: " . $conn->connect_error);
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $password = isset($_POST['password']) ? $_POST['password'] : '';
 
     if (empty($email) || empty($password)) {
-        echo "Por favor, preencha todos os campos.";
+        echo "Please fill in all fields.";
     } else {
         $sql = "SELECT * FROM users WHERE email = ?";
         $stmt = $conn->prepare($sql);
@@ -26,14 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         if ($result->num_rows == 1) {
             $user = $result->fetch_assoc();
             if (password_verify($password, $user['password'])) {
-                // Senha correta, redirecione para a página desejada
                 header("Location: home.html");
                 exit();
             } else {
-                echo "Senha incorreta.";
+                echo "Incorrect password.";
             }
         } else {
-            echo "Email não encontrado.";
+            echo "Email not found.";
         }
     }
 }

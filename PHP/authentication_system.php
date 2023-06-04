@@ -8,7 +8,7 @@ $dbname = "validator";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
-    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+    die("Database connection failed: " . $conn->connect_error);
 }
 
 // Verifica se o formulário foi submetido
@@ -31,11 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             exit;
         } else {
             // Senha incorreta
-            $error = 'Nome de usuário ou senha inválidos.';
+            $error = 'Invalid username or password.';
         }
     } else {
         // Usuário não encontrado
-        $error = 'Nome de usuário ou senha inválidos.';
+        $error = 'Invalid username or password.';
     }
 }
 
@@ -53,10 +53,10 @@ $conn->close();
         <p><?php echo $error; ?></p>
     <?php endif; ?>
     <form method="POST" action="authentication_system.php">
-        <label for="username">Nome de usuário:</label>
+        <label for="username">User name:</label>
         <input type="text" name="username" id="username" required><br>
 
-        <label for="password">Senha:</label>
+        <label for="password">Password:</label>
         <input type="password" name="password" id="password" required><br>
 
         <input type="submit" value="Login">
