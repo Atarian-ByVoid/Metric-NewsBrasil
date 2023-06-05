@@ -2,16 +2,18 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    -webkit-filter: blur(10.6);
 }
 
 .welcome-container {
+  filter: blur(10.6);
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-image: url('street.jpg');
+    background-image: url('pexels-pincalo-15030788.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -19,7 +21,7 @@ body {
 }
 
 .text-with-background {
-    background-color: #353535;
+    background-color: #000000b1;
     padding: 20px 30px;
     color: #fff;
     border-radius: 5px;
@@ -30,11 +32,13 @@ body {
 }
 
 h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 36px;
     margin-bottom: 20px;
 }
 
 p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
 }
 
@@ -73,7 +77,7 @@ p {
     top:0; bottom: 0;
     right: 0;left: 0;
     display: block;
-    background-color: #141111;
+    background-color: #ffffff;
     content: "";
     transform: translate3d(-101%,0,0);
     z-index:-1;
@@ -81,13 +85,13 @@ p {
   }
   
   .link:hover {
-    color: #fff;
+    color: black;
   }
   
   .link:hover:after {
     transform: translate3d(0,0,0);
   }
-
+/* 
   .logo{
     background-color: #000000;
     border-bottom-left-radius: 20px;
@@ -105,4 +109,4 @@ p {
 .logo img{
     height: 200px;
     width: 400px;
-}
+} */

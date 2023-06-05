@@ -241,10 +241,6 @@ body{
     </style>
 </head>
 <body>
-
-
-
-
     <div class="wrapper">
 
     <form method="POST" action="authentication_system.php">
