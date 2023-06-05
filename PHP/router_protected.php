@@ -10,30 +10,26 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
-
-// Verifica se o usuário está autenticado
 if (!isset($_SESSION['username'])) {
-    // Usuário não autenticado, redireciona para a página de login
     header('Location: router_protected.php');
     exit;
 }
-
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="music.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <title>Music</title>
 </head>
-
 <body>
+
+
   <header class="header"><label>News Brasil</label>
     <nav class="navbar">
       <a href="home.html">Home</a>
@@ -41,7 +37,6 @@ if (!isset($_SESSION['username'])) {
       <a href="/pages/weather.html">Weather</a>
       <a href="router_protected.php">Music</a>
       <a href="/pages/photos.html">Photos</a>
-      <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
       <a href="/pages/more.html">More</a>
       <a href="login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
     </nav>
@@ -143,7 +138,10 @@ if (!isset($_SESSION['username'])) {
         </li>
       </ul>
     </div>
-  </section>
-</body>
+  </section> 
 
+
+
+</body>
 </html>
+
