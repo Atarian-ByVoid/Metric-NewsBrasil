@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/images/changeBackground/mountain_dark.jpg') no-repeat;
+    background: url('pexels-tiana-614484.jpg') no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -34,8 +34,7 @@
     align-items: center;
     z-index: 100;
     background-color: #020410;
-    /* border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px; */
+  
   
   
   }
@@ -92,6 +91,57 @@
     opacity: 1;
   
   }
+  
+  
+  .search-bar{
+    width: 250px;
+    height: 45px;
+    background:transparent ;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    display: flex;
+    align-items:center ;
+  }
+  
+  .search-bar input{
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #e4e4e4;
+    padding-left: 10px;
+  
+  
+  }
+  
+  .search-bar input::placeholder{
+    color: #e4e4e4;
+  
+  }
+  
+  .search-bar button{
+    width: 40px;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .search-bar button i{
+    font-size: 22px;
+    color: #e4e4e4;
+  
+  }
+  
   .wrapper{
     position: relative;
     width: 400px;
@@ -108,12 +158,36 @@
     transition: transform .5s ease,height .2 ease;
    
   }
+  .wrapper.active-popup{
+    transform: scale(1);
+  }
+  .wrapper.active{
+    height: 520px;
+  }
   .wrapper .form-box{
     width: 100%;
     padding: 40px;
   }
+  .wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+  }
   
-.form-box h2{
+  .wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+  }
+  .wrapper .form-box.Register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px); 
+  }
+  .wrapper.active .form-box.Register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+  }
+  
+  .form-box h2{
     font-size: 2em;
     color: #000;
     text-align: center;
@@ -133,9 +207,9 @@
     color: #000;
     font-weight: 500;
     pointer-events: none;
-    
+   
   }
- 
+  
   .input-box input{
     width: 100%;
     height: 100%;
@@ -154,6 +228,28 @@
     color: #000;
     line-height: 57px;
   }
+  
+  .remeber{
+    font-size: .9em;
+    color: #000;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .remeber label input{
+    accent-color: #000;
+    margin-right: 3px;
+  }
+  .remeber a{
+    color: #000;
+    text-decoration: none; 
+  }
+  .remeber a:hover{
+    text-decoration: underline;
+  }
+  
   .btn{
     width: 100%;
     height: 45px;
@@ -165,9 +261,26 @@
     font-size: 1em;
     color: white;
     font-weight: 500;
-  }  
-
+  }
+  
+  .login-register{
+    font-size: .9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+  }
+  
+  .login-register p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .login-register p a:hover{
+    text-decoration: underline;
+  
+  }
+  
   .btn:hover{
-    
     font-weight: bold;
   }

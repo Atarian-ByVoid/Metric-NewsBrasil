@@ -4,7 +4,7 @@ function putDataInScreen(data) {
     document.querySelector(".city").innerHTML = "Weather in " + data.name;
     document.querySelector(".temp").innerHTML = Math.floor(data.main.temp) + "°C";
     document.querySelector(".text-prevision").innerHTML = data.weather[0].description;
-    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+    document.querySelector(".humidity").innerHTML = "Humidity: "+data.main.humidity + "%";
     document.querySelector(".image-prevision").src = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
 
 }

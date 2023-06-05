@@ -1,28 +1,44 @@
+<?php
+session_start();
+
+$servername = "localhost:3306";
+$username = "root";
+$password = "admin";
+$dbname = "validator";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
+}
+if (!isset($_SESSION['username'])) {
+    header('Location: router_protected.php');
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
+   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/CSS/menu/music.css">
+  <link rel="stylesheet" href="music.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" href="/metric.png" type="image/x-icon">
-  <link rel="shortcut icon" href="/metric.png" type="image/x-icon">
   <title>Music</title>
 </head>
-
 <body>
-   <header class="header"><label>News Brasil</label>
+
+
+  <header class="header"><label>News Brasil</label>
     <nav class="navbar">
-      <a href="/home.html">Home</a>
+      <a href="home.html">Home</a>
       <a href="/pages/sport.html">Sport</a>
       <a href="/pages/weather.html">Weather</a>
-      <a href="/pages/music.html">Music</a>
+      <a href="router_protected.php">Music</a>
       <a href="/pages/photos.html">Photos</a>
-
       <a href="/pages/more.html">More</a>
-      <a href="/pages/login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
+      <a href="login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
     </nav>
     <form action="#" class="search-bar">
 
@@ -31,28 +47,13 @@
     </form>
   </header>
 
-<div class="image-player">
-
-  <div class="music-player">
-    <audio id="audio-player">
-      <source src="/music/The Best of Both Worlds.mp3" type="audio/mpeg">
-    </audio>
-    <div class="controls">
-      <button id="previous-button">&lt;&lt;</button>
-      <button id="play-button">Play</button>
-      <button id="pause-button">Pause</button>
-      <button id="next-button">&gt;&gt;</button>
-    </div>
-  </div>
-</div>
-
   <section class="top-stories">
     <div class="container">
       <h2>Music news</h2>
       <ul>
         <li>
           <a href="/models/enviorementEducation.html">
-            <img  src="/images/noticies/travis.png" alt="" />
+            <img src="/images/noticies/travis.png" alt="" />
             <h3>New album release confirmed</h3>
             <p>Rapper confirm rummors about release of his new album</p>
           </a>
@@ -65,8 +66,8 @@
           </a>
         </li>
         <li>
-          <a  href="models/thePreservation.html">
-            <img  src="/images/noticies/spotify.png" alt="" />
+          <a href="models/thePreservation.html">
+            <img src="/images/noticies/spotify.png" alt="" />
             <h3>New record</h3>
             <p>The Weekend breaks all-time record for Spotify streams with his latest album</p>
           </a>
@@ -87,7 +88,7 @@
       <ul>
         <li>
           <a href="#">
-            <img id="teste"src="/images/noticies/adele.png" alt="" />
+            <img src="/images/noticies/adele.png" alt="" />
             <h3>Comming back</h3>
             <p>Adele returns to the stage with a new world tour</p>
           </a>
@@ -123,7 +124,7 @@
         </li>
         <li>
           <a href="#">
-            <img  src="/images/noticies/justin.png" alt="" />
+            <img src="/images/noticies/justin.png" alt="" />
             <h3>VIP Talk</h3>
             <p>Exclusive Conversation With Justin Bieber: How He Created His Latest Musical Masterpiece</p>
           </a>
@@ -139,7 +140,8 @@
     </div>
   </section> 
 
-  <script src="/JS/playerMusic.js"></script>
-</body>
 
+
+</body>
 </html>
+

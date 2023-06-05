@@ -1,4 +1,4 @@
-*{
+ *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,8 +22,7 @@ body {
   align-items: center;
   z-index: 100;
   background-color: #020410;
-  /* border-bottom-left-radius: 9px;
-  border-bottom-right-radius: 9px; */
+
 
 
 }
@@ -209,63 +208,6 @@ section.top-stories ul li p {
   margin-bottom: 10px;
 }
 
-section.video {
-  background-color: #fff;
-  padding: 50px 0;
-}
-
-section.video h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-.video-player {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-}
-
-.video-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-section.editor-picks {
-  padding: 50px 0;
-}
-
-section.editor-picks h2 {
-  font-size: 32px;
-  margin-bottom: 30px;
-}
-
-section.editor-picks ul {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-}
-
-section.editor-picks ul li {
-  width: calc(33.33% - 20px);
-  margin-right: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  
-}
-
-section.editor-picks ul li:hover {
-  transform: translateY(-5px);
-}
-
-section.editor-picks ul li a {
-  display: block;
-  text-decoration: none;
-  color: #333;
-}
-
 footer {
   background-color: #020410;
   color: #fff;
@@ -376,25 +318,42 @@ section.top-stories ul li p {
   
 
 .music-player {
-  
-  background-color: #404355;
+  width: 500px;
+  background-color: #ffffff69;
+  filter: blur(10);
   padding: 2%;
+  margin: 0 auto;
   margin-top: 6%;
-  border-style: outset;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-radius:20px ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-filter: blur(10);
 
 }
-audio {
-  display: block;
-  margin-bottom: 10px;
+
+.image-player{
+  background: url('/images/photos/road.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background-size: cover;
+
 }
+
+
+
 .controls {
   display: flex;
   justify-content: center;
 }
+
+
 button {
-  background-image: linear-gradient(to right, #b4b4b4, #221d1d7a);
+  background-image: linear-gradient(to right, #525252, #221d1d7a);
   border-radius: 10px;
   color: white;
   border: none;
@@ -421,4 +380,5 @@ button {
     background-position: 0% 50%;
   }
 }
-
+ 
+ 

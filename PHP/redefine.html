@@ -1,25 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="redefine.css">
+    <link rel="icon" href="metric.png" type="image/x-icon">
+    <link rel="shortcut icon" href="metric.png" type="image/x-icon">
+    <title>I forgot my password </title>
 </head>
+
 <body>
-    <h2>Redefinição de Senha</h2>
-    <form action="redefine.php" method="post">
-        <div>
-            <label for="username">Nome de usuário:</label>
-            <input type="text" id="username" name="username" required>
-        </div>
-        <div>
-            <label for="new_password">Nova senha:</label>
-            <input type="password" id="new_password" name="new_password" required>
-        </div>
-        <div>
-            <input type="submit" value="Redefinir Senha">
-        </div>
-    </form>
-</body>
+
+    <body>
+        <header class="header"><label>News Brasil</label>
+            <nav class="navbar">
+              <a href="home.html">Home</a>
+              <a href="/pages/sport.html">Sport</a>
+              <a href="/pages/weather.html">Weather</a>
+              <a href="/pages/music.html">Music</a>
+              <a href="/pages/photos.html">Photos</a>
+              <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+              <a href="/pages/more.html">More</a>
+              <a href="login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
+            </nav>
+         
+          </header>
+
+        <div class="wrapper">
+
+            <div class="wrapper">
+                <div class="form-box login">
+                    <h2>Change Password</h2>
+                    <form action="redefine.php" method="POST">
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" name="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="new_password" required>
+                            <label>New Password</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                            <input type="password" name="confirm_password" required>
+                            <label>Confirm Password</label>
+                        </div>
+                        <button type="submit" class="btn">Send</button>
+                    </form>
+                </div>
+            </div>
+            
+            </div>
+
+
+            <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
 </html>
