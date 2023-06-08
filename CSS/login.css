@@ -229,7 +229,7 @@ body{
   line-height: 57px;
 }
 
-.remeber{
+.remember{
   font-size: .9em;
   color: #000;
   font-weight: 500;
@@ -238,15 +238,15 @@ body{
   justify-content: space-between;
 }
 
-.remeber label input{
+.remember label input{
   accent-color: #000;
   margin-right: 3px;
 }
-.remeber a{
+.remember a{
   color: #000;
   text-decoration: none; 
 }
-.remeber a:hover{
+.remember a:hover{
   text-decoration: underline;
 }
 
