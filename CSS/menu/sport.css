@@ -5,11 +5,11 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: aliceblue;
+  font: 1rem/1.3 "Roboto", sans-serif;
+  padding: 70px;
 }
 .header {
   position: fixed;
@@ -202,31 +202,6 @@ section.top-stories ul li p {
   margin-bottom: 10px;
 }
 
-footer {
-  background-color: #020410;
-  color: #fff;
-  padding: 40px 0;
-  text-align: left;
-}
-
-footer p {
-  margin: 0;
-  font-size: 18px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.social-media a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 19px;
-}
-
-
-.fab {
-  font-size: inherit;
-  font-style: normal;  
-}
-
 .newsletter{
   font-size: 25px;
   margin: 0 auto;
@@ -309,4 +284,138 @@ section.top-stories ul li p {
   margin-bottom: 10px;
 }
 
-  
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-logo img {
+  max-width: 500px; 
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.loader-logo img {
+  max-width: 400px;
+  animation: pulse 2s infinite;
+}
+/* RESET STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+:root {
+  --bg_main: #ffffff;
+  --text_light: #000000;
+  --text_med: #53627c;
+  --text_dark: #1e2432;
+  --red: #ff1e42;
+  --darkred: #c3112d;
+  --orange: #ff8c00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+ 
+input {
+  -webkit-appearance: none;
+}
+ 
+button,
+input {
+  border: none;
+  background: none;
+  outline: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+/* FOOTER 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background-color: #000000;
+  padding: 20px 0;
+  border-radius: 10px;
+
+}
+footer p{
+  color: aliceblue;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links a {
+  margin-right: 10px;
+  color: aliceblue;
+
+}
+.social-links img{
+  width: 20px;
+}
+
+p {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
