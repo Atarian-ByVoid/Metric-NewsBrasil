@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NewsBrasil&Metric</title>
+    <link rel="stylesheet" href="CSS/home.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/metric.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/metric.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>News Brasil</title>
-  <link rel="stylesheet" href="CSS/home.css" />
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <link rel="icon" href="/metric.png" type="image/x-icon">
-<link rel="shortcut icon" href="/metric.png" type="image/x-icon">
-</head>
+  <body>
+    <header class="header">
+      <label>NewsBrasil&Metric</label>
+      <nav class="navbar">
+        <a href="/home.html">Home</a>
+        <a href="/pages/sport.html">Sport</a>
+        <a href="/pages/weather.html">Weather</a>
+        <a href="/pages/music.html">Music</a>
+        <a href="/pages/photos.html">Photos</a>
+        <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+        <a href="/pages/more.html">More</a>
+        <a href="/pages/login.html">
+          <i class="bx bxs-user-circle bx-tada bx-flip-horizontal"></i>Login</a
+        >
+      </nav>
+      <form action="#" class="search-bar">
+        <input type="text" placeholder="Search..." />
+        <button type="submit"><i class="bx bx-search"></i></button>
+      </form>
+    </header>
 
-<body>
-  <header class="header"><label>News Brasil</label>
-    <nav class="navbar">
-      <a href="/home.html">Home</a>
-      <a href="/pages/sport.html">Sport</a>
-      <a href="/pages/weather.html">Weather</a>
-      <a href="/pages/music.html">Music</a>
-      <a href="/pages/photos.html">Photos</a>
-      <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
-      <a href="/pages/more.html">More</a>
- <a href="/pages/login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
-    </nav>
-    <form action="#" class="search-bar">
-
-      <input type="text" placeholder="Search...">
-      <button type="submit"><i class='bx bx-search'></i></button>
-    </form>
-  </header>
-
-  <main>
     <section class="top-stories">
+      <div id="grid">
+        <div class="container1">
+          <img src="images/photos/bridge.jpg" alt="" />
+          <div class="texto">
+            Lorem ipsum dolor sit amet consectetur,<br />
+            adipisicing elit. Architecto molestias consequatu
+          </div>
+        </div>
+
+        <div id="grid2">
+          <div class="container2">
+            <img src="images/photos/beach.jpg" alt="" />
+            <div class="q1">Lorem ipsum dolor sit</div>
+          </div>
+
+          <div class="container3">
+            <img src="images/photos/city.jpg" alt="" />
+            <div class="q2">Lorem ipsum dolor sit</div>
+          </div>
+
+          <div class="container4">
+            <img src="images/photos/plant.jpg" alt="" />
+            <div class="q3">Lorem ipsum dolor sit</div>
+          </div>
+
+          <div class="container5">
+            <img src="images/photos/road.jpg" alt="" />
+            <div class="q4">Lorem ipsum dolor sit</div>
+          </div>
+        </div>
+      </div>
       <div class="container">
         <h2>Environment</h2>
         <ul>
           <li>
-            <a href="/models/enviorenment/enviorementEducation.html">
-              <img src="/images/noticies/pexels-akil-mazumder-1072824.jpg" alt="" />
+            <a href="/models/enviorementEducation.html">
+              <img
+                src="/images/noticies/pexels-akil-mazumder-1072824.jpg"
+                alt=""
+              />
               <h3>Environment Education</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
           </li>
           <li>
             <a href="/models/enviorenment/fightToday.html">
-              <img src="/images/noticies/pexels-markus-spiske-2990644.jpg" alt="" />
+              <img
+                src="/images/noticies/pexels-markus-spiske-2990644.jpg"
+                alt=""
+              />
               <h3>Fight today for a better tomorrow</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
@@ -67,7 +107,7 @@
           <li>
             <a href="#">
               <img src="/images/noticies/jardim.jpg" alt="" />
-              <h3>Six extraordinary gardens </h3>
+              <h3>Six extraordinary gardens</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
           </li>
@@ -108,7 +148,10 @@
           </li>
           <li>
             <a href="#">
-              <img src="/images/noticies/pexels-markus-spiske-2027059.jpg" alt="" />
+              <img
+                src="/images/noticies/pexels-markus-spiske-2027059.jpg"
+                alt=""
+              />
               <h3>Cause LGBTQIA+</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
@@ -123,14 +166,20 @@
         <ul>
           <li>
             <a href="#">
-              <img src="/images/noticies/pexels-polina-zimmerman-3747474.jpg" alt="" />
+              <img
+                src="/images/noticies/pexels-polina-zimmerman-3747474.jpg"
+                alt=""
+              />
               <h3>The benefits of reading</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="/images/noticies/pexels-david-bartus-1166209.jpg" alt="" />
+              <img
+                src="/images/noticies/pexels-david-bartus-1166209.jpg"
+                alt=""
+              />
               <h3>The most beautiful places on the planet</h3>
               <p>Brief summary of the article goes here.</p>
             </a>
@@ -151,8 +200,5 @@
         <p>&copy; 2023 News Brasil & Metric. All rights reserved.</p>
       </div>
     </footer>
-
-    
-</body>
-
+  </body>
 </html>

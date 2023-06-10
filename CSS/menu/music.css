@@ -151,9 +151,16 @@ body {
   color: #020410;
 }
 
+#teste{
+object-fit:contain;
+
+
+}
+
 section.top-stories {
   padding: 50px 0;
   margin-top: 60px;
+  
 }
 
 section.top-stories h2 {
