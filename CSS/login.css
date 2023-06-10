@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 *{  
   margin: 0;
   padding: 0;
@@ -44,7 +45,7 @@ body{
   font-size: 32px ;
   display: inline;
   justify-content: left;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
 
 }
 .navbar a{
