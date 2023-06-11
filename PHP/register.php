@@ -22,7 +22,7 @@ if (empty($username) || empty($password) || empty($email)) {
     if ($result->num_rows > 0) {
         echo "The username is already in use.";
     } else {
-        $hashedPassword = password_hash($password, PASSWORD_DEFAULT); // Criptografar a senha
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
         $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$hashedPassword', '$email')";
         if ($conn->query($sql) === TRUE) {
             header('Location: home.html');
