@@ -25,6 +25,8 @@ if (!isset($_SESSION['username'])) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="music.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="icon" href="light-metric.png" type="image/x-icon">
+    <link rel="shortcut icon" href="light-metric.png" type="image/x-icon">
   <title>Music</title>
 </head>
 <body>

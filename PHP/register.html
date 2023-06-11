@@ -1,59 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="register.css">
+    <link rel="icon" href="light-metric.png" type="image/x-icon">
+    <link rel="shortcut icon" href="light-metric.png" type="image/x-icon">
     <title>Register</title>
 </head>
+
 <body>
     <header class="header"><label>NewsBrasil&Metric</label>
         <nav class="navbar">
-          <a href="home.html">Home</a>
-          <a href="sport.html">Sport</a>
-          <a href="weather.html">Weather</a>
-          <a href="music.html">Music</a>
-          <a href="photos.html">Photos</a>
-          <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
-          <a href="more.html">More</a>
-          <a href="login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
+            <a href="home.html">Home</a>
+            <a href="sport.html">Sport</a>
+            <a href="weather.html">Weather</a>
+            <a href="music.html">Music</a>
+            <a href="photos.html">Photos</a>
+            <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+            <a href="more.html">More</a>
+            <a href="login.html"> <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
         </nav>
-        </header>
+    </header>
 
-        <div class="wrapper"> 
+    <div class="wrapper">
         <div class="form-box Register">
             <h2>Sign up</h2>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="person"></ion-icon></span>
-                <input type="text" required>
-                <label>Name</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></ion-icon></span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
-                <label>Passowd</label>
-            </div>
-            <div class="remeber">
-                <label><input type="checkbox">I agree to the terms & conditions</label> 
-
-            </div>
-            <button type="submit" class="btn">Register</button>
+            <form action="register.php" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="username" required>
+                    <label>Name</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Email</label>
+                </div>
+    
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remeber">
+                    <label><input type="checkbox" name="agree_terms" required>I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            </form>
             <div class="login-register">
-                <p>Already an account?<a href="#" class="login-link">Login</a></p>
+                <p>Already have an account? <a href="login.html" class="login-link">Login</a></p>
             </div>
         </div>
     </div>
-</div>
+    
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-     
+
 </body>
+
 </html>

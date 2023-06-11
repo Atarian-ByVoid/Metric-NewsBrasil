@@ -25,7 +25,7 @@ if (empty($username) || empty($password) || empty($email)) {
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT); // Criptografar a senha
         $sql = "INSERT INTO users (username, password, email) VALUES ('$username', '$hashedPassword', '$email')";
         if ($conn->query($sql) === TRUE) {
-            echo "Successful registration!";
+            header('Location: home.html');
         } else {
             echo "Error registering user: " . $conn->error;
         }
