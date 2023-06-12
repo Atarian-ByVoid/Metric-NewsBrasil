@@ -11,12 +11,10 @@ if ($conn->connect_error) {
     die("Database connection failed: " . $conn->connect_error);
 }
 
-// Verifica se o formulário foi submetido
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Verificar as credenciais no banco de dados
     $query = "SELECT * FROM users WHERE username = '$username'";
     $result = $conn->query($query);
 
@@ -24,17 +22,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $row = $result->fetch_assoc();
         $storedPassword = $row['password'];
 
-        // Verificar a senha
         if (password_verify($password, $storedPassword)) {
             $_SESSION['username'] = $username;
             header('Location: router_protected.php');
             exit;
         } else {
-            // Senha incorreta
             $error = 'Invalid username or password.';
         }
     } else {
-        // Usuário não encontrado
         $error = 'Invalid username or password.';
     }
 }

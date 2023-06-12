@@ -7,25 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/login.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="/metric.png" type="image/x-icon">
-    <link rel="shortcut icon" href="/metric.png" type="image/x-icon">
+    <link rel="icon" href="/logo/light-metric.png " type= "image/x-icon" />
+    <link rel="shortcut icon" href="/logo/light-metric.png" type="image/x-icon" />
     <title>Login</title>
 </head>
 
 <body>
-    <header class="header"><label>News Brasil</label>
+    <header class="header"><label>Metric&NewsBrasil</label>
         <nav class="navbar">
-            <a href="/home.html">Home</a>
-            <a href="/pages/sport.html">Sport</a>
-            <a href="/pages/weather.html">Weather</a>
-            <a href="/pages/music.html">Music</a>
-            <a href="/pages/photos.html">Photos</a>
-            <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
-            <a href="/pages/more.html">More</a>
-            <a href="/pages/login.html"> <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
+          <a href="/home.html">Home</a>
+          <a href="/pages/sport.html">Sport</a>
+          <a href="/pages/weather.html">Weather</a>
+          <a href="/pages/music.html">Music</a>
+          <a href="/pages/photos.html">Photos</a>
+          <!-- <a href="/pages/realTimeStopwatch.html">Real time stopwatch</a> -->
+          <a href="/pages/more.html">More</a>
+          <a href="/pages/login.html">   <i class='bx bxs-user-circle bx-tada bx-flip-horizontal'></i>Login</a>
         </nav>
-
-    </header>
+     
+      </header>
+      <div id="loader">
+        <div class="loader-logo">
+          <img src="/logo/light-metric.png" alt="Logo">
+        </div>
+      </div>
 
     <div class="wrapper">
 
@@ -53,7 +58,7 @@
 
 
         <div class="form-box Register">
-            <h2>Registration</h2>
+            <h2>Sign up</h2>
             <div class="input-box">
                 <span class="icon"><ion-icon name="person"></ion-icon></span>
                 <input type="text" required>
@@ -81,6 +86,7 @@
         </div>
     </div>
     <script src="/JS/switch.js"></script>
+    <script src="/JS/loaderPage.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
