@@ -59,17 +59,17 @@ if (!isset($_SESSION['username'])) {
 
 <div class="image-player">
 
-<div class="music-player">
-<audio id="audio-player">
-<source src="pinkfloyd.mp3" type="audio/mpeg">
-</audio>
-<div class="controls">
-<button id="previous-button">&lt;&lt;</button>
-<button id="play-button">Play</button>
-<button id="pause-button">Pause</button>
-<button id="next-button">&gt;&gt;</button>
-</div>
-</div>
+  <div class="music-player">
+    <audio id="audio-player">
+      <source src="pinkfloyd.mp3" type="audio/mpeg">
+    </audio>
+    <div class="controls">
+      <button id="previous-button">&lt;&lt;</button>
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="next-button">&gt;&gt;</button>
+    </div>
+  </div>
 </div>
 
 <section class="top-stories">
