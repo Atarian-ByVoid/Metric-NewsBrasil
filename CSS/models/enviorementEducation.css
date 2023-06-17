@@ -1,197 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
+
 body {
-font-family: Arial, sans-serif;
-background-color: #f4f4f4;
-color: #333;
+  font-family: Arial, sans-serif;
+  background-color: aliceblue;
+  font: 1rem/1.3 "Roboto", sans-serif;
+  padding: 70px;
 }
-.header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-padding: 25px 10.5%;
-background: transparent;
-display: flex;
-justify-content: space-between;
-align-items: center;
-z-index: 100;
-background-color: #020410;
-/* border-bottom-left-radius: 9px;
-border-bottom-right-radius: 9px; */
-
-
-}
-
-.header label{
-margin-right: 10px;
-color: aliceblue;
-font-size: 32px ;
-display: inline;
-justify-content: left;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-.navbar a{
-position: relative;
-font-size: 16px;
-color: aliceblue;
-text-decoration: none;
-font-weight: 500;
-margin-right: 30px;
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 10.5%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: #020410;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
 }
 
-.navbar a::after{
-content: '';
-position: absolute;
-left:0 ;
-bottom: -6px;
-width: 100%;
-height: 2px;
-background: #eee;
-border-radius: 5px;
--webkit-border-radius: 5px;
--moz-border-radius: 5px;
--ms-border-radius: 5px;
--o-border-radius: 5px;
-transform: translateY(10px);
-opacity: 0;
-transition: .5s;
--webkit-transform: translateY(10px);
--moz-transform: translateY(10px);
--ms-transform: translateY(10px);
--o-transform: translateY(10px);
--webkit-transition: .5s;
--moz-transition: .5s;
--ms-transition: .5s;
--o-transition: .5s;
+.header label {
+  margin-right: 10px;
+  color: aliceblue;
+  font-size: 32px;
+  display: inline;
+  justify-content: left;
+  font-family: 'Libre Baskerville', serif;
 }
 
-.navbar a:hover::after{
-transform: translateY(0);
--webkit-transform: translateY(0);
--moz-transform: translateY(0);
--ms-transform: translateY(0);
--o-transform: translateY(0);
-opacity: 1;
-
+.navbar a {
+  position: relative;
+  font-size: 16px;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 30px;
 }
 
-.search-bar{
-width: 250px;
-height: 45px;
-background:transparent ;
-border: 2px solid #eee;
-border-radius: 6px;
--webkit-border-radius: 6px;
--moz-border-radius: 6px;
--ms-border-radius: 6px;
--o-border-radius: 6px;
-display: flex;
-align-items:center ;
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background: #eee;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transform: translateY(10px);
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 
-.search-bar input{
-width: 100%;
-background: transparent;
-border: none;
-outline: none;
-font-size: 16px;
-color: #e4e4e4;
-padding-left: 10px;
-
-
+.navbar a:hover::after {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  opacity: 1;
 }
 
-.search-bar input::placeholder{
-color: #e4e4e4;
-
+.search-bar {
+  width: 250px;
+  height: 45px;
+  background: transparent;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: flex;
+  align-items: center;
 }
 
-.search-bar button{
-width: 40px;
-height: 100%;
-background: transparent;
-border: none;
-outline: none;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
+.search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #e4e4e4;
+  padding-left: 10px;
 }
 
-.search-bar button i{
-font-size: 22px;
-color: #e4e4e4;
-
+.search-bar input::placeholder {
+  color: #e4e4e4;
 }
 
-
-.container .content{
-position: absolute;
-top: auto;
-left: 0 ;
-width: 58%;
-height: 100%;
-background: transparent;
-padding: 80px;
-color: #e4e4e4 ;
-display: flex;
-justify-content: space-between;
-flex-direction: column;  
-
+.search-bar button {
+  width: 40px;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
-.content .logo{
-font-size: 30px;
-color: #020410;
+.search-bar button i {
+  font-size: 22px;
+  color: #e4e4e4;
 }
 
+.container .content {
+  position: absolute;
+  top: auto;
+  left: 0;
+  width: 58%;
+  height: 100%;
+  background: transparent;
+  padding: 80px;
+  color: #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.content .logo {
+  font-size: 30px;
+  color: #020410;
+}
 
 /* Estilos da imagem */
 .figure {
   image-resolution: 30px;
-margin: 20px 0;
-text-align: center;
-/*border-image-width: 100%;*/
-width: 240px;
-  height: 0px;
-  display:inline-table;
-
-}
-
-.image {
+  margin: 20px 0;
+  text-align: center;
+  /*border-image-width: 100%;*/
   width: 240px;
-  height: 240px;
-  display: none;
+  height: 0px;
+  display: inline-table;
 }
+
 figcaption {
-font-style: italic;
+  font-style: italic;
 }
 
 /* Estilos do texto principal */
 article {
-margin: 20px;
+  margin: 20px;
 }
 blockquote {
-font-style: italic;
-margin: 20px;
-padding: 10px;
-border-left: 5px solid #333;
+  font-style: italic;
+  margin: 20px;
+  padding: 10px;
+  border-left: 5px solid #333;
 }
 cite {
-font-style: normal;
+  font-style: normal;
 }
 
 h1 {
-margin-top: 10%;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
 }
 
 h2 {
-margin-top: 5px;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
 }
-
-
+.figure {
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+}
